@@ -1,0 +1,27 @@
+{
+  "name": "tg-thanos",
+  "version": "1.0.0",
+  "description": "a helper tool for removing members of a telegram group",
+  "main": "dist/index.js",
+  "repository": "https://github.com/emmanuerl/tg-thanos",
+  "author": "Chukwuemeka Chukwurah<emekaemmanuel045@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "watch": "tsc --watch -p tsconfig.json",
+    "build": "tsc -p tsconfig.json",
+    "start:dev": "nodemon dist/index.js",
+    "prestart": "mkdir tmp",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "input": "^1.0.1",
+    "telegraf": "^4.15.0",
+    "telegram": "^2.19.10"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.1",
+    "nodemon": "^3.0.1",
+    "typescript": "^5.2.2"
+  }
+}
